@@ -22,3 +22,5 @@ jobs:
       run: cd www && npm install --save
     - name: npm build
       run: cd www && webpack --config webpack.config.js
+    - name: publish
+      run: git push origin `git subtree split --prefix dist master`:gh-pages --force
