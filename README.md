@@ -1,1 +1,1 @@
-### Boilerplate for rust wasm
+### Minesweeper game developed with Rust, WebAssembly (Wasm) and Canvas 

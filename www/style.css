@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'digital';
-    src: url('./digital.ttf');
+    src: url('./assets/digital.ttf');
 }
 
 body {
@@ -46,7 +46,7 @@ body {
     width: 30px;
     border-radius: 50%;
     box-shadow: none;
-    background-image: url("./face_happy.png");
+    background-image: url("./assets/face_happy.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -75,9 +75,9 @@ function canvas_right_click_event(raw_event) {
 function event_loop() {
     board_flag.innerText = Board.get_total_flags_left();
     if (Board.get_state() == 3) {
-        board_face.style.backgroundImage = "url('./face_sad.png')";
+        board_face.style.backgroundImage = "url('./assets/face_sad.png')";
     } else {
-        board_face.style.backgroundImage = "url('./face_happy.png')";
+        board_face.style.backgroundImage = "url('./assets/face_happy.png')";
     }
 
     let cells_details = Board.flat_cells_details();
