@@ -13,12 +13,8 @@ function reset() {
     let total_bombs = 100;
 
     if (screen.width <= 480) {
-        row = 15;
-        column = 10;
-        total_bombs = 25;
-    } else if (screen.width <= 720) {
         row = 25;
-        column = 15;
+        column = 17;
         total_bombs = 70;
     }
 
