@@ -23,4 +23,4 @@ jobs:
     - name: npm build
       run: cd www && webpack --config webpack.config.js && ls -lhtr
     - name: publish
-      run: git add . && git commit -m "dist update" && git push origin `git subtree split --prefix www/output.js master`:gh-pages --force
+      run: git config --global user.email "karthik1705.n@gmail.com" && git config --global user.name "Karthik Nedunchezhiyan" && git add . && git commit -m "dist update" && git push origin `git subtree split --prefix www main`:gh-pages --force
