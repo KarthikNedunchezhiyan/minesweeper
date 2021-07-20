@@ -20,3 +20,5 @@ jobs:
       run: wasm-pack build
     - name: npm install
       run: cd www && npm install --save
+    - name: npm build
+      run: cd www && webpack --config webpack.config.js
