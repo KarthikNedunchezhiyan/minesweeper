@@ -1,0 +1,22 @@
+name: Rust
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: install wasm-pack
+      run:  curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+    - name: wasm build
+      run: wasm-pack build
+    - name: npm install
+      run: cd www && npm install --save
