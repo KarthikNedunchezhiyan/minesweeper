@@ -217,7 +217,7 @@ impl Board {
         if self.cells[y_coordinate][x_coordinate].flaged {
             self.cells[y_coordinate][x_coordinate].flaged = false;
             self.total_flags_left += 1;
-        } else {
+        } else if self.total_flags_left > 0 {
             self.cells[y_coordinate][x_coordinate].flaged = true;
             self.total_flags_left -= 1;
         }
