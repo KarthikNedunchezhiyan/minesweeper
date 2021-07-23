@@ -45,7 +45,6 @@ body {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    box-shadow: none;
     background-image: url("./assets/face_happy.png");
     background-position: center;
     background-size: cover;
@@ -53,6 +52,7 @@ body {
     top: 50%;
     border-color: #808080;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 #board-clock {
@@ -82,4 +82,15 @@ body {
 
 canvas {
     background-color: #f0f0f0;
+}
+
+.glowFace {
+    animation: glow 1.2s linear infinite;
+}
+
+
+@keyframes glow {
+      50% {
+        box-shadow: 0 0 60px 2px yellow;
+      }
 }
