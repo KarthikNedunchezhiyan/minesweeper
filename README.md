@@ -13,8 +13,8 @@ Screenshot 1             |  Screenshot 2
 
 ## Functionality
 
-- ✅ First click will always an empty cell.
-- ✅ Right click on PC and long press on touch devices to place the flag.
-- ✅ Clicking on SpongeBob will reset the game.
+- ✅ The first click should always be an empty cell.
+- ✅ Right click on PC or long-press on touch devices should place the flag.
+- ✅ Clicking on SpongeBob should reset the game.
 - ⬜️ Option to select difficulty level.
-- ⬜️ Customize board size and mines count.
+- ⬜️ Option to customize board size and mines count.
