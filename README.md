@@ -18,3 +18,8 @@ Screenshot 1             |  Screenshot 2
 - ✅ Clicking on SpongeBob should reset the game.
 - ⬜️ Option to select difficulty level.
 - ⬜️ Option to customize board size and mines count.
+
+
+## Contributing
+
+Suggestions are always welcome
