@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'digital';
+    src: url('./assets/digital.ttf');
+}
+
+body {
+    background-color: #333;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#board-head {
+    height: 40px;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#board-head > * {
+    display: inline-block;
+}
+
+#board-flag {
+    position: relative;
+    height: 25px;
+    width: 40px;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board-face {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url("./assets/face_happy.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 50%;
+    border-color: #808080;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#board-clock {
+    position: relative;
+    height: 25px;
+    width: 40px;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-text {
+    font-family: "digital", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+canvas {
+    background-color: #f0f0f0;
+}
+
+.glowFace {
+    animation: glow 1.2s linear infinite;
+}
+
+
+@keyframes glow {
+      50% {
+        box-shadow: 0 0 60px 2px yellow;
+      }
+}
