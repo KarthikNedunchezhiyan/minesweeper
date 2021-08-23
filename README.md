@@ -1,3 +1,5 @@
+### 👉 [click here to play the game](https://karthiknedunchezhiyan.me/minesweeper/) 👈
+
 ## Minesweeper game 
 
 Revealing all the cells without hitting the mines is the task. Each number in the cell denotes how many bombs are in the adjacent cells (8 sides). You can mark any arbitrary cell with a flag.
